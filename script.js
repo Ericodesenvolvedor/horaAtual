@@ -8,7 +8,17 @@ function reflesh() {
     var hora = pegarhora.getHours()
     var minutos = pegarhora.getMinutes()
 
-    msg.innerText = ('Hora atual ' + hora + ':' + minutos)
+    //configuração para solucionar o problema de minutos '14:5' para deixar com o zero na frente '14:05'.
+
+    if (minutos < 10) {
+        msg.innerText = ('Hora atual ' + hora + ':' + '0' + minutos)
+    }
+
+    else {
+        msg.innerText = ('Hora atual ' + hora + ':' + minutos)
+    }
+
+    //troca de imagens conforme horario
 
     if (hora >= 6 && hora < 12) {
         foto.src = 'imagens/dia.jpg'
