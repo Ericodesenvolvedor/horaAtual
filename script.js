@@ -11,17 +11,17 @@ function reflesh() {
     msg.innerText = ('Hora atual ' + hora + ':' + minutos)
 
     if (hora >= 6 && hora < 12) {
-        foto.src = 'dia.jpg'
+        foto.src = 'imagens/dia.jpg'
         msgBottom.innerText = 'Status: dia'
     } 
 
     else if (hora < 18) {
-        foto.src = 'tarde.jpg'
+        foto.src = 'imagens/tarde.jpg'
         msgBottom.innerText = 'Status: tarde'
     } 
     
     else if (hora >= 18) {
-        foto.src = 'noite.jpg'
+        foto.src = 'imagens/noite.jpg'
         msgBottom.innerText = 'Status: noite'
         document.body.style.background = '#011934'
     }
