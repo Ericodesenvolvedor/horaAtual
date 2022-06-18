@@ -6,6 +6,7 @@ O projeto consiste em trocar às imagens conforme o periodo, sendo manhã, tarde
 
 - HTML5
 - CSS3
+- Javascript
 - Git e Github
 
 ## Veja o projeto clicando no link abaixo
